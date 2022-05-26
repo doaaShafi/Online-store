@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("background3.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" style="color: rgb(191, 255, 161)">Search Results</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" id = "list">
+               
+            </ul>
+            <form method="POST" action='/search' class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" name="Search" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+
+    <div>
+        <span style='color: white;'><%=message%></span>
+        <a href="<%=x1%>"><%=y1%></a>
+        <br>
+        <a href="<%=x2%>"><%=y2%></a>
+        <br>
+        <a href="<%=x3%>"><%=y3%></a>
+        <br>
+        <a href="<%=x4%>"><%=y4%></a>
+        <br>
+        <a href="<%=x5%>"><%=y5%></a>
+        <br>
+        <a href="<%=x6%>"><%=y6%></a>
+
+    </div>
+   <!-- <script>
+       function function1(text) {
+  var ul = document. getElementById("list");
+  var li = document. createElement("li");
+  li. appendChild(document. createTextNode(text));
+  ul. appendChild(li);
+}
+var searchWord = document.getElementById('Search').value;
+var products = ["Galaxy S21 Ultra","iPhone 13 Pro","Leaves of Grass","The Sun and Her Flowers","Boxing Bag","Tennis Racket"];
+  console.log(searchWord);
+  
+  for (let i =0; i<products.length ; i++){
+    console.log("bbb");
+    console.log(products[i]);
+    
+    if(products[i].includes(searchWord)){
+      console.log("ccc");
+
+      if(i==0){
+        function1("/galaxy");
+      }
+        
+    }
+  }
+   </script> -->
+        
+   
+</body>
+</html>
